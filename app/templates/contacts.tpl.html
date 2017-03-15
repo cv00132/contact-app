@@ -1,7 +1,8 @@
 <h2>My Peeps</h2>
 <ul>
     <li ng-repeat="contact in contacts">
-        <a href='/contacts/{{ contact.id }}'>
+            {{ contact.photo_url}}
+        <a href='#!/contacts/{{ contact.id }}'>
             {{ contact.name }}
         </a>
     </li>
