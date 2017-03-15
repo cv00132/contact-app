@@ -1,0 +1,30 @@
+<h4>Add a Contact</h4>
+<form ng-submit="addContact(contact)">
+  <p class="control">
+    <input type="text" placeholder="Name"
+           ng-model="contact.name" />
+  </p>
+  <p class="control">
+    <input type="text" placeholder="Phone"
+           ng-model="contact.phone" />
+  </p>
+  <p class="control">
+    <input type="text" placeholder="City"
+           ng-model="contact.city" />
+  </p>
+  <p class="control">
+    <input type="text" placeholder="State"
+           ng-model="contact.state" />
+  </p>
+  <p class="control">
+    <input type="text" placeholder="Profile Pic"
+           ng-model="contact.photo_url" />
+  </p>
+  <p class="control">
+    <input type="text" placeholder="Email"
+           ng-model="contact.email" />
+  </p>
+  <p class="control">
+    <button class="button is-primary">Add Contact</button>
+  </p>
+</form>
