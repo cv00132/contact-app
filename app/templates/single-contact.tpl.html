@@ -1,1 +1,15 @@
-<h2>Single bullshit thing</h2>
+<div ng-repeat="contact in contacts">
+    <div>{{ contact.photo_url }}</div>
+        <div>
+            {{ contact.name }}
+        </div>
+        <div>
+            {{ contact.email }}
+        </div>
+        <div>
+            {{contact.phone }}
+        </div>
+        <div>
+            {{ contact.city }},{{ contact.state }}
+    </div>
+</div>
