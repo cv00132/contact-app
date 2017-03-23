@@ -1,9 +1,14 @@
-<h2>My Peeps</h2>
-<ul>
-    <li ng-repeat="contact in contacts">
+
+<aside class="menu contacts">
+  <p class="menu-label">
+    My Peeps
+  </p>
+  <ul class="menu-list">
+    <li class="contact-list" ng-repeat="contact in contacts">
             {{ contact.photo_url }}
         <a href='#!/contacts/{{ contact.id }}'>
             {{ contact.name }}
         </a>
     </li>
-</ul>
+  </ul>
+</aside>
