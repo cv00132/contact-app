@@ -14,9 +14,8 @@ function Config ($stateProvider, $urlRouterProvider) {
     .state('contacts-id', {
       url: '/contacts/:id',
       templateUrl: 'templates/single-contact.tpl.html',
-      controller: 'ContactController'
+      controller: 'SingleController'
     })
-
     .state('page-not-found', {
       url: '/not-found',
       template: `<h2>No such page.</h2>`

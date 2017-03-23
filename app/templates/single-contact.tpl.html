@@ -1,15 +1,15 @@
-<div ng-repeat="contact in contacts">
-    <div>{{ contact.photo_url }}</div>
-        <div>
-            {{ contact.name }}
-        </div>
-        <div>
-            {{ contact.email }}
-        </div>
-        <div>
-            {{contact.phone }}
-        </div>
-        <div>
-            {{ contact.city }},{{ contact.state }}
+<div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{ currentContact.photo_url }}" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{ currentContact.name }}</p>
+        <p class="subtitle is-6">{{ currentContact.email }}</p>
+        <p class="subtitle is-6">{{ currentContact.phone }}</p>
+        <p class="subtitle is-6">{{ currentContact.city }},{{ currentContact.state }}</p>
+      </div>
     </div>
 </div>
