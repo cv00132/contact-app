@@ -6,7 +6,6 @@ function SingleController ($scope, $http, $stateParams) {
      var contactId = $stateParams.id;
      $http.get(`${SERVER_URL}/contacts/${contactId}`).then(resp => {
              $scope.currentContact = resp.data;
-             console.log($scope.currentContact)
         });
     };
 
